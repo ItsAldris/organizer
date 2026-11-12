@@ -1,0 +1,18 @@
+<h1>Categories</h1>
+@if (categoryList$ | async; as categoryList) {
+  @for (category of categoryList; track $index) {
+    <p>{{ category.name }}</p>
+  }
+}
+
+<h1>Tasks</h1>
+@if (taskList$ | async; as taskList) {
+  @for (task of taskList; track $index) {
+    <p>{{ task.name + ' | ' + task.category?.name }}</p>
+  }
+}
+
+<h1>Test task</h1>
+@if (testTask$ | async; as task) {
+    <p>{{ task.id + ' ' + task.name }}</p>
+}

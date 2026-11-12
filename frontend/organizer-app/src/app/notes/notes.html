@@ -1,0 +1,7 @@
+<h1>Notes</h1>
+@if (noteList$ | async; as noteList) {
+  @for (note of noteList; track $index) {
+    <h2>{{ note.title + ' | ' + note.category?.name }}</h2>
+    <p>{{ note.content }}</p>
+  }
+}

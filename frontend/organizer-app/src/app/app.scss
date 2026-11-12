@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 12px 20px;
+  background: #ddffe7;
+  border: 1px solid #dcfce7;
+  border-radius: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #166534;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: #dcfce7;
+  color: #14532d;
+}
+
+nav a.active {
+  background: #16a34a;
+  color: white;
+}
